@@ -95,28 +95,4 @@ class Program
             Console.Write("User > ");
         }
     }
-
-    // // 建立 Agent
-    // ChatCompletionAgent agent = new()
-    // {
-    //     Instructions = "你是一位 MCP 工具助理，會根據使用者輸入決定是否要使用 tool 來回答問題。",
-    //     Name = "McpAgent",
-    //     Kernel = kernel,
-    //     Arguments = new KernelArguments(new PromptExecutionSettings
-    //     {
-    //         FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(options: new() { RetainArgumentTypes = true })
-    //     })
-    // };
-
-    // // 互動對話（多輪 + 上下文）
-    // Console.WriteLine("💬 MCP Chat Agent 啟動，輸入 exit 離開。");
-    // while (true)
-    // {
-    //     Console.Write("你：");
-    //     var input = Console.ReadLine();
-    //     if (string.IsNullOrWhiteSpace(input) || input.Trim().ToLower() == "exit") break;
-
-    //     var response = await agent.InvokeAsync(input).FirstAsync();
-    //     Console.WriteLine($"🤖 回應：{response.Content}\n");
-    // }
 }
