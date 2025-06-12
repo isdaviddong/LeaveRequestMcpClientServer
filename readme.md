@@ -21,12 +21,13 @@
 2. 在 `McpClientApp` 資料夾中執行以下命令以還原依賴：
    ```shell
    dotnet restore
+   dotnet build
    ```
-3. 執行 MCP Server：
+3. 執行 MCP Server(可以不用自己執行，執行Client即可)：
    ```shell
    dotnet run --project ../McpServer/McpServer.csproj
    ```
-4. 執行 MCP Client：
+4. 執行 MCP Client(主要是這隻)：
    ```shell
    dotnet run --project McpClientApp.csproj
    ```
